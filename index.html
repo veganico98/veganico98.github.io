@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Seu Nome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script src="/JS/custom.js" defer></script>
+
+ <style>
+    :root {
+      --bg: #ffffff;
+      --text: #2b2b2b;
+      --accent: #0d6efd;
+      --secondary: #20c997;
+      --card-bg: #f8f9fa;
+      --border: #dee2e6;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;  
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5em 2em;
+        background: var(--card-bg);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .brand {
+        font-size: 1.3em;
+        color: var(--accent);
+    }
+
+    nav a {
+        margin: 0 1em;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 500;
+    }
+
+    nav a.active {
+        color: var(--accent);
+        font-weight: bold;
+        border-bottom: 2px solid var(--accent);
+    }
+
+    a:hover {
+        font-size: 1.2em;
+        color: var(--accent); 
+    }
+
+    .social-icons{
+        display: flex;
+        gap: 1em;
+    }
+
+    .social-icons a {
+        color: var(--text);
+        font-size: 1.5em !important;
+        margin-left: 0;
+
+    }
+    
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 3em 2em;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.2em;
+    }
+
+    .hero h1 span {
+        color: var(--accent);
+    }
+
+    .hero p {
+        font-size: 1.1em;
+        margin: 1em 0;
+    }
+
+    .hero a {
+        display: inline-block;
+        background: linear-gradient(to right, var(--accent), var(--secondary));
+        color: white;
+        padding: 0.75em 1.5em;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .hero img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 2em;
+    }
+
+    section {
+        padding: 3em 2em;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: var(--accent);
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .skills i {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        color: var(--text);
+    }
+
+    .all-tech-icons {
+        margin-top: 1.5em;
+        text-align: center;
+        font-size: 2em;
+        color: var(--text);
+        display: flex;
+        justify-content: center;
+        gap: 1.2em;
+        flex-wrap: wrap;
+    }
+
+    .all-tech-icons i, .skills i {
+        transition: color 0.3s ease;
+        cursor: default;
+    }
+
+    .all-tech-icons i:hover, .skills i:hover {
+        color: var(--accent);   
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5em;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+    }
+
+    .projects-grid h3 {
+      margin-top: 0.5em;
+      color: var(--accent);
+    }
+
+    .projects-grid p {
+      font-size: 0.95em;
+      margin: 0.5em 0;
+    }
+
+    .projects-grid a {
+      display: inline-block;
+      margin-top: 0.5em;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      color: #999;
+      font-size: 0.85em;
+    }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+    }
+
+    .fade-in.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">&lt; Nicolas Linares /&gt;</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Competências</a>
+      <a href="#projetos">Projetos</a>
+    </nav>
+    <div class="social-icons">
+  <a href="https://wa.me/5535999799121" target="_blank" title="WhatsApp">
+  <i class="fab fa-whatsapp icon"></i>
+    </a>
+  <a href="https://github.com/veganico98" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://linkedin.com/in/nicolas-linares-de-oliveira/" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+  </header>
+
+  <section class="hero" id="sobre">
+    <div class="hero-text">
+      <h1>Desenvolvedor Web Full Stack<br><span>Nicolas Linares</span></h1>
+      <p>Desenvolvedor web com foco em criar soluções digitais funcionais e atrativas. Atualmente curso Análise e Desenvolvimento de Sistemas e estou em constante evolução como profissional full stack.</p>
+      <a href="/docs/Curriculo_Nicolas_Linares.pdf" target="_blank" rel="noopener noreferrer">📄 VER CURRÍCULO</a>
+    </div>
+    <img src="/img/foto2.jpg" alt="Foto">
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2 class="section-title">HABILIDADES GERAIS</h2>
+    <div class="skills">
+      <div>
+        <i class="fas fa-laptop-code"></i>
+        <h3>Front-End</h3>
+        <p>HTML, CSS, JavaScript, Bootstrap</p>
+      </div>
+      <div>
+        <i class="fas fa-server"></i>
+        <h3>Back-End</h3>
+        <p>PHP, MySQL</p>
+      </div>
+      <div>
+        <i class="fas fa-project-diagram"></i>
+        <h3>Metodologias Ágeis</h3>
+        <p>Scrum, Git, GitHub</p>
+      </div>
+    </div>
+    <div class="all-tech-icons">
+    <i class="fab fa-html5" title="HTML5"></i>
+    <i class="fab fa-css3-alt" title="CSS3"></i>
+    <i class="fab fa-js" title="JavaScript"></i>
+    <i class="fab fa-bootstrap" title="Bootstrap"></i>
+    <i class="fab fa-php" title="PHP"></i>
+    <!-- MySQL não tem ícone oficial no FontAwesome, pode usar este ícone genérico -->
+    <i class="fas fa-database" title="MySQL"></i>
+    <i class="fab fa-git-alt" title="Git"></i>
+    <i class="fab fa-github" title="GitHub"></i>
+    <i class="fas fa-tasks" title="Scrum"></i>
+  </div>
+  </section>
+
+  <section id="projetos" class="fade-in">
+    <h2 class="section-title">PROJETOS</h2>
+    <div class="projects-grid">
+        <div class="card">
+            <img src="img/portifolio.png" style="width: 100%; border-radius: 8px;">
+            <h3>Portfólio</h3>
+            <p>Portfólio moderno com HTML, CSS, JS e layout responsivo. Foco em UI/UX.</p>
+            <a href="#">🔗 GitHub Repo</a>
+        </div>
+        <div class="card">
+            <img src="img/DarkSoulsClone - index.png" style="width: 100%; border-radius: 8px;">
+            <h3>Dark Souls 3 Official Website Clone</h3>
+            <p>Clone da página oficial de Dark Souls 3, criado como exercício prático de front-end com foco em HTML, CSS, JavaScript e Bootstrap.</p>
+            <a href="https://github.com/veganico98/DarkSoulsClone">🔗 GitHub Repo</a>
+        </div>
+        <div class="card">
+            <img src="img/TrialsOfDarkSouls3.png" style="width: 100%; border-radius: 8px;">
+            <h3>Trials Of Dark Souls 3</h3>
+            <p>Projeto full stack com arquitetura MVC, criado para auxiliar fãs da franquia Dark Souls a alcançarem 100% de progresso com um checklist interativo. Desenvolvido com HTML, CSS, Bootstrap, JavaScript, PHP e MySQL.</p>
+            <a href="https://github.com/veganico98/trialsOfDarkSouls3">🔗 GitHub Repo</a>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nicolas Linares de Oliveira. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
