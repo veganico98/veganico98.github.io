@@ -1,4 +1,3 @@
-// Scroll suave com destaque no menu
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
@@ -21,7 +20,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Animação de fade-in ao rolar
+// Animação de fade-in
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
