@@ -50,6 +50,7 @@ header{
 
 footer{
     height: 3em;
+    padding: 0.5em;
 }
 
 @media (min-width: 200px) {
