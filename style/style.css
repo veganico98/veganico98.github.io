@@ -16,6 +16,10 @@ header{
     padding: 1em;
 }
 
+.links{
+
+}
+
 .icon{
     font-size: 3em;
 }
@@ -25,6 +29,33 @@ header{
 }
 
 .photo{
-    width: 30em;
-    height: 30;
+    width: auto;
+    height: auto;
+}
+
+.icon:hover{
+    color: aqua;
+}
+
+.skills{
+    height: 100vh;
+}
+
+.fade-in, .links{
+    transition: all 0.8s ease-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer{
+    height: 3em;
 }

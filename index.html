@@ -7,7 +7,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 
     <link rel="stylesheet" href="style/style.css">
 
@@ -19,70 +20,78 @@
 <body class="">
     <header class="shadow-md shadow-yellow-900/50">
         <nav class="flex items-center justify-center gap-4 p-4 text-white">
-            <a href="#sobre">Sobre</a>
-            <a href="#skills">Competências</a>
-            <a href="#projetos">Projetos</a>
-            <!-- <a href="https://wa.me/5535999799121" target="_blank" title="WhatsApp"><i class="fab text-3x1 text-white fa-whatsapp icon"></i></a>
-            
-            <a href="https://github.com/veganico98" target="_blank" title="GitHub"><i class="fab fa-github icon"></i></a>
-            
-            <a href="https://linkedin.com/in/nicolas-linares-de-oliveira/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin icon"></i></a> -->
+            <a class="links hover:text-orange-800" href="#home">Home</a>
+            <a class="links hover:text-orange-800" href="#sobre">Sobre</a>
+            <a class="links hover:text-orange-800" href="#skills">Competências</a>
+            <a class="links hover:text-orange-800" href="#projetos">Projetos</a>
         </nav>
     </header>
 
-    <section class="flex items-center justify-between h-screen main text-white">
+    <section class="h-full flex flex-col md:flex-row items-center md:justify-between gap-6 h-screen main text-white">
         <div class="">
-            <h1 class="text-7xl">Seja bem vindo! Sou</h1>
-            <h1 class="text-7xl text-orange-800">Nicolas Linares</h1>
-            <p class="text-gray-600 text-2xl">Desenvolvedor Full-Stack</p>
+            <h1 class="text-5xl sm:text-7x1 md:text-5xl lg:text-5xl xl:text-7xl">Seja bem vindo!</h1>
+            <h1 class="text-4xl sm:text-7x1 md:text-5xl lg:text-5xl xl:text-7xl">Sou <span class="text-orange-800 ">Nicolas Linares</span></h1>
+            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Desenvolvedor Full-Stack</p>
         </div>
         <div>
-            <img class="photo rounded-full object-cover" src="img/foto5.png" alt="">
+            <img class="rounded-full object-cover shadow-xl shadow-yellow-700/50
+                w-50 h-50
+                sm:w-70 sm:h-70
+                md:w-70 md:h-60
+                lg:w-60 lg:h-60
+                xl:w-120 xl:h-120" src="img/foto5.png" alt="">
         </div>
     </section>
 
-  <!-- <section class="hero" id="sobre">
-    <div class="hero-text">
-      <h1>Desenvolvedor Web Full Stack<br><span>Nicolas Linares</span></h1>
-      <p>Desenvolvedor web com foco em criar soluções digitais funcionais e atrativas. Atualmente curso Análise e Desenvolvimento de Sistemas e estou em constante evolução como profissional full stack.</p>
-      <a href="/docs/Curriculo_Nicolas_Linares.pdf" target="_blank" rel="noopener noreferrer">📄 VER CURRÍCULO</a>
-    </div>
-    <img src="/img/foto5.png" alt="Foto">
-  </section>
+    <section class="skills flex flex-col items-center gap-20">
+        <div class="gap-6 flex items-center flex-col">
+            <p class="fade-in text-orange-800 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">Habilidades Front-End</p>
+            <div class="flex flex-row items-center gap-6 text-gray-600 text-3x1 sm:text-3x1 md:text-4xl lg:text-5xl xl:text-6xl">
+                <i class="fade-in hover:text-orange-800 devicon-html5-plain"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-css3-plain"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-bootstrap-plain"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-tailwindcss-original"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-javascript-plain"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-jquery-plain"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-react-original"></i>          
+                <i class="fade-in hover:text-orange-800 devicon-vitejs-plain"></i>
+            </div>
+        </div>
+        
+        <div class="gap-6 flex flex-col items-center">
+            <p class="fade-in text-orange-800 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">Habilidades Back-End</p>
+            <div class="flex flex-row items-center gap-6 text-gray-600 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">         
+                <i class="fade-in hover:text-orange-800 devicon-php-plain"></i>
+                <i class="fade-in hover:text-orange-800 devicon-laravel-line"></i>
+                <i class="fade-in hover:text-orange-800 devicon-python-plain"></i>
+                <i class="fade-in hover:text-orange-800 devicon-java-plain"></i>
+            </div>             
+        </div>
 
-  <section id="skills" class="fade-in">
-    <h2 class="section-title">HABILIDADES GERAIS</h2>
-    <div class="skills">
-      <div>
-        <i class="fas fa-laptop-code"></i>
-        <h3>Front-End</h3>
-        <p>HTML, CSS, JavaScript, Bootstrap</p>
-      </div>
-      <div>
-        <i class="fas fa-server"></i>
-        <h3>Back-End</h3>
-        <p>PHP, MySQL</p>
-      </div>
-      <div>
-        <i class="fas fa-project-diagram"></i>
-        <h3>Metodologias Ágeis</h3>
-        <p>Scrum, Git, GitHub</p>
-      </div>
-    </div>
-    <div class="all-tech-icons">
-    <i class="fab fa-html5" title="HTML5"></i>
-    <i class="fab fa-css3-alt" title="CSS3"></i>
-    <i class="fab fa-js" title="JavaScript"></i>
-    <i class="fab fa-bootstrap" title="Bootstrap"></i>
-    <i class="fab fa-php" title="PHP"></i>
-    <i class="fas fa-database" title="MySQL"></i>
-    <i class="fab fa-git-alt" title="Git"></i>
-    <i class="fab fa-github" title="GitHub"></i>
-    <i class="fas fa-tasks" title="Scrum"></i>
-  </div>
-  </section>
+        <div class="gap-6 flex flex-col items-center">
+            <p class="fade-in text-orange-800 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">Banco de dados</p>
+            <div class="flex flex-row items-center gap-6 text-gray-600 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">               
+                <i class="fade-in hover:text-orange-800 devicon-mysql-original"></i>         
+            </div>             
+        </div>
 
-  <section id="projetos" class="fade-in">
+        <div class="gap-6 flex flex-col items-center">
+            <p class="fade-in text-orange-800 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">Ferramentas</p>
+            <div class="flex flex-row items-center gap-6 text-gray-600 text-md sm:text-md md:text-4xl lg:text-5xl xl:text-6xl">                
+                <i class="fade-in hover:text-orange-800 devicon-vscode-plain"></i>
+                <i class="fade-in hover:text-orange-800 devicon-git-plain"></i>
+                <i class="fade-in hover:text-orange-800 devicon-github-original"></i>
+                <i class="fade-in hover:text-orange-800 devicon-docker-plain"></i>
+                <i class="fade-in hover:text-orange-800 devicon-postman-plain"></i>
+                <i class="fade-in hover:text-orange-800 devicon-photoshop-plain"></i>          
+            </div>             
+        </div>
+            
+        
+    </section>
+
+
+  <!-- <section id="projetos" class="fade-in">
     <h2 class="section-title">PROJETOS</h2>
     <div class="projects-grid">
         <div class="card">
@@ -104,10 +113,42 @@
             <a href="https://github.com/veganico98/trialsOfDarkSouls3">🔗 GitHub Repo</a>
         </div>
     </div>
-  </section>
+  </section> -->
 
-  <footer>
+  <footer class="flex items-center justify-center shadow-[0_-4px_10px_-2px_rgba(113,63,18,0.7)] text-white">
     &copy; 2025 Nicolas Linares de Oliveira. Todos os direitos reservados.
-  </footer> -->
+  </footer>
 </body>
 </html>
+
+<!-- <a href="https://wa.me/5535999799121" target="_blank" title="WhatsApp"><i class="fab text-3x1 text-white fa-whatsapp icon"></i></a>
+            
+            <a href="https://github.com/veganico98" target="_blank" title="GitHub"><i class="fab fa-github icon"></i></a>
+            
+            <a href="https://linkedin.com/in/nicolas-linares-de-oliveira/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin icon"></i></a> -->
+
+
+<!-- <div class="flex flex-col items-center gap-4 fade-in">
+            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Habilidades Front-End</p>
+            <a href="https://skillicons.dev">
+                <img class="icons" src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,js,jquery,react,vite" />
+            </a>
+        </div>
+        <div class="flex flex-col items-center gap-4 fade-in">
+            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Habilidades Back-End</p>
+            <a href="https://skillicons.dev">
+                <img class="icons" src="https://skillicons.dev/icons?i=php,laravel,python,java" />
+            </a>
+        </div>
+        <div class="flex flex-col items-center gap-4 fade-in">
+            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Banco de dados</p>
+            <a href="https://skillicons.dev">
+                <img class="icons" src="https://skillicons.dev/icons?i=mysql" />
+            </a>
+        </div>
+        <div class="flex flex-col items-center gap-4 fade-in">
+            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Ferramentas</p>
+            <a href="https://skillicons.dev">
+                <img class="icons" src="https://skillicons.dev/icons?i=vscode,git,github,docker,postman,powershell,ps,obsidian" />
+            </a>
+</div> -->
