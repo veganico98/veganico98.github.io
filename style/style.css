@@ -69,15 +69,6 @@ a:hover{
   width: 95%;
 }
 
-.swiper-button-next {
-  margin-bottom:10em;
-  z-index: 1;
-}
-
-.swiper-button-prev{
-
-}
-
 .proj1, .proj2{
   width: 80%;
 }
@@ -111,7 +102,7 @@ a:hover{
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: rgba(19, 11, 11, 0.5);
+  color: rgb(161, 167, 179);
 }
 
 footer{
