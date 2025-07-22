@@ -7,8 +7,8 @@ const appearOptions = {
 };
 
 const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
+entries.forEach((entry) => {
+  if (!entry.isIntersecting) return;
     entry.target.classList.add("appear");
     observer.unobserve(entry.target);
   });
@@ -20,9 +20,9 @@ faders.forEach((fader) => {
 
 // Carousel
 const swiper = new Swiper('.swiper', {
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
