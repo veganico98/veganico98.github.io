@@ -33,6 +33,10 @@ a:hover{
     font-size: 3em;
 }
 
+.footerIcon{
+  font-size: 1.5em;
+}
+
 .photo{
     width: auto;
     height: auto;
@@ -74,7 +78,7 @@ a:hover{
   font-size: 3em;
 }
 
-.fade-in, .links{
+.fade-in, .links, .footerIcon{
     transition: all 0.8s ease-out;
 }
 
@@ -102,8 +106,12 @@ a:hover{
 }
 
 footer{
-    height: 3em;
+    height: 5em;
     padding: 0.5em;
+}
+
+.copy{
+  font-size: 1em;
 }
 
 @media (min-width: 200px) {
@@ -113,6 +121,12 @@ footer{
   .textCard{
     font-size: 0.5em;
   }
+  .projects{
+    padding: 1em;
+  }
+  .carousel{  
+  padding: 0.4em;
+}
 }
 
 @media (min-width: 400px) {
@@ -121,7 +135,16 @@ footer{
   }
 
   .textCard{
-    font-size: 0.5em;
+    font-size: 0.6em;
+  }
+  .projects{
+    padding: 2em;
+  }
+  .carousel{  
+  padding: 0.4em;
+  }
+  .copy{
+    font-size: 0.7em;
   }
 }
 
@@ -131,6 +154,12 @@ footer{
   }
   .textCard{
     font-size: 0.8em;
+  }
+  .projects{
+    padding: 2em;
+  }
+  .copy{
+    font-size: 0.7em;
   }
 }
 
