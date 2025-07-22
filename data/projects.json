@@ -45,7 +45,7 @@
   {
     "categoria": "Full-Stack",
     "nome": "Soma Rotina",
-    "descricao": "Desenvolvido de forma independente com olegarioojv para iniciarmos nossos estudos em ReactJS, Vite e Laravel. A aplicação permite que o usuário registre períodos de tempo em um formulário, retornando a soma total acompanhada de uma mensagem motivacional ou de parabéns, com base na comparação com o registro anterior.",
+    "descricao": "Desenvolvido de forma independente com <a class='text-orange-800' href='https://github.com/olegarioojv'>olegarioojv</a> para iniciarmos nossos estudos em ReactJS, Vite e Laravel. A aplicação permite que o usuário registre períodos de tempo em um formulário, retornando a soma total acompanhada de uma mensagem motivacional ou de parabéns, com base na comparação com o registro anterior.",
     "tecnologias": "HTML - CSS - ReactJS - ViteJS - TailWindCss - PHP - Laravel",
     "imagem": "img/SomaRotina.png",
     "status": "Em andamento"
