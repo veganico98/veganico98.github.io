@@ -1,0 +1,77 @@
+[
+  {
+    "categoria": "Front-End",
+    "nome": "Dark Souls Clone",
+    "tipo": "Landing Page",
+    "descricao": "Projeto desenvolvido para aprimorar habilidades em criação de landing pages, inspirado na página inicial do site oficial de Dark Souls.",
+    "tecnologias": "HTML - CSS - JavaScript - BootStrap",
+    "imagem": "img/DarkSoulsClone - index.png",
+    "url": "https://veganico98.github.io/DarkSoulsClone/"
+  },
+  {
+    "categoria": "Front-End",
+    "nome": "Portfólio",
+    "descricao": "Portfólio pessoal desenvolvido para apresentar meus projetos, demonstrar na prática minhas habilidades e facilitar o contato profissional.",
+    "tecnologias": "HTML - CSS - JavaScript - TailWindCss - JSON",
+    "imagem": "img/portifolio.png",
+    "url": "https://veganico98.github.io/"
+  }, 
+  {
+    "categoria": "Front-End",
+    "nome": "Técnico de Refrigeração",
+    "tipo": "Landing Page",
+    "descricao": "Projeto desenvolvido para divulgação e contato profissional de um técnico em refrigeração.",
+    "tecnologias": "HTML - CSS - BootStrap",
+    "imagem": "img/RodolfoRicci - index.png",
+    "url": "https://veganico98.github.io/Tecnico-refrigeracao/"
+  },
+  {
+    "categoria": "Front-End",
+    "nome": "Palavra Secreta",
+    "descricao": "Projeto desenvolvido durante o curso de React do Hora de Codar. Um jogo interativo em que o jogador deve adivinhar uma palavra sorteada com base em um tema, revelando letra por letra e chances limitadas.",
+    "tecnologias": "HTML - CSS - ReactJs",
+    "imagem": "img/palavra-secreta.png",
+    "url": "https://github.com/veganico98/Palavra-secreta"
+  },
+  {
+    "categoria": "Front-End",
+    "nome": "Spotify Clone",
+    "tipo": "Landing Page",
+    "descricao": "Prática de front-end focada na recriação da estética da página inicial do Spotify.",
+    "tecnologias": "HTML - CSS - BootStrap",
+    "imagem": "img/SpotifyClone - index.png",
+    "url": "https://veganico98.github.io/Spotify-Clone-/"
+  },
+  {
+    "categoria": "Full-Stack",
+    "nome": "Soma Rotina",
+    "descricao": "Desenvolvido de forma independente com olegarioojv para iniciarmos nossos estudos em ReactJS, Vite e Laravel. A aplicação permite que o usuário registre períodos de tempo em um formulário, retornando a soma total acompanhada de uma mensagem motivacional ou de parabéns, com base na comparação com o registro anterior.",
+    "tecnologias": "HTML - CSS - ReactJS - ViteJS - TailWindCss - PHP - Laravel",
+    "imagem": "img/SomaRotina.png",
+    "status": "Em andamento"
+  },
+  {
+    "categoria": "Full-Stack",
+    "nome": "Twitter Clone",
+    "descricao": "Clone do Twitter desenvolvido durante o curso Web Completo com os instrutores Jorge Sant Ana e Jamilton Damasceno. O projeto foi realizado com foco no aprendizado de conceitos como segurança, uso de banco de dados, orientação a objetos em PHP e arquitetura MVC.",
+    "tecnologias": "HTML - CSS - PHP - BootStrap - MySQL",
+    "imagem": "img/twitterClone-index.png",
+    "url": "https://github.com/veganico98/Twitter_Clone"
+  },
+  {
+    "categoria": "Full-Stack",
+    "nome": "Trials Of Dark Souls 3",
+    "descricao": "Projeto desenvolvido com o objetivo de auxiliar jogadores que buscam a platina do jogo. A aplicação permite que usuários criem contas e utilizem um checklist interativo de tarefas vinculadas ao seu perfil, facilitando o acompanhamento do progresso rumo à conquista.",
+    "tecnologias": "HTML - CSS - JavaScript - PHP - BootStrap - MySQL",
+    "imagem": "img/TrialsOfDarkSouls3.png",
+    "status": "Em andamento"
+  },
+  {
+    "categoria": "Full-Stack",
+    "nome": "DashPro",
+    "descricao": "Projeto desenvolvido durante o curso Web Completo dos instrutores Jorge Sant Ana e Jamilton Damasceno. Trata-se de um dashboard com atualização em tempo real, criado para praticar o uso de jQuery e PHP em conjunto com banco de dados MySQL.",
+    "tecnologias": "HTML - CSS - JavaScript - JQuery - PHP - JSON - MySQL",
+    "imagem": "img/DashBoard - index.png",
+    "url": "https://github.com/veganico98/App_Dashboard"
+  }
+]
