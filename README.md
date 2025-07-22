@@ -17,12 +17,21 @@ Esse projeto foi realizado para expor de forma clara e organizada minhas habilid
 ---
 
 ## Tecnologias Utilizadas
-
-- **HTML5** – estrutura da página
-- **CSS3** – estilização personalizada
-- **JavaScript** – Animações e escalabilidade.
-- **TailWindCss** – Framework utilizado para responsividade e estilos.
-- **JSON** - Escalabilidade de projetos.
+<p align="left">
+   *** <img src="https://skillicons.dev/icons?i=html" width="20px" style="vertical-align: middle;"/> *** Estrutura da página.
+</p>
+<p align="left">
+   *** <img src="https://skillicons.dev/icons?i=css" width="20px" style="vertical-align: middle;"/> *** Estilização personalizada.
+</p>
+<p align="left">
+   *** <img src="https://skillicons.dev/icons?i=javascript" width="20px" style="vertical-align: middle;"/> *** Animações e escalabilidade.
+</p>
+<p align="left">
+   *** <img src="https://skillicons.dev/icons?i=tailwindcss" width="20px" style="vertical-align: middle;"/> *** Framework utilizado para responsividade e estilos.
+</p>
+<p align="left">
+   **JSON** - Escalabilidade de projetos.
+</p>
 
 ---
 
