@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Portifólio pessoal</h1> 
-  <img width="80px" height="80px" src="https://media.tenor.com/drxH1lO9cfEAAAAj/dark-souls-bonfire.gif">
+  <img width="120px" height="120px" src="img/icon.png">
   <p>Projeto desenvolvido para demonstrar minhas habilidades e projetos.</p>
 </div>
 
