@@ -1,24 +1,3 @@
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 100;
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
-});
 
 // Animação de fade-in
 const faders = document.querySelectorAll(".fade-in");
@@ -38,3 +17,12 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
+
+// Carousel
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

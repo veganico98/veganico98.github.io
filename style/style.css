@@ -1,3 +1,8 @@
+:root {
+  --main-color: #0c0d18;
+  --secondary-color: #13141f;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -8,16 +13,20 @@ body {
 }
 
 body{
-    background-color: #13141f;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--main-color);
 }
 
 header{
     height: 4em;
     padding: 1em;
+    background-color: var(--main-color);
+    position: fixed;
+    z-index: 2;
 }
 
-.links{
-
+a:hover{
+  color: #9a3412;
 }
 
 .icon{
@@ -29,8 +38,40 @@ header{
     height: auto;
 }
 
+.card{
+  background-color: var(--main-color);
+}
+
+.main{
+  background-color: var(--main-color);
+  z-index: 1;
+}
+
 .skills{
     height: 100vh;
+    padding-top: 4em;
+    background-color: var(--secondary-color);
+}
+
+.projects{
+  padding: 4em;
+  background-color: var(--main-color);
+
+}
+
+.carousel{
+  background-color: var(--secondary-color);
+  padding: 2em;
+  width: 95%;
+}
+
+.proj1, .proj2{
+  width: 80%;
+}
+
+.textCard{
+  padding: 1em;
+  font-size: 3em;
 }
 
 .fade-in, .links{
@@ -40,12 +81,24 @@ header{
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    
 }
 
 .fade-in.appear {
     opacity: 1;
     transform: translateY(0);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff6600;
+  border-radius: 20%;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #a84300;
 }
 
 footer{
@@ -57,11 +110,18 @@ footer{
   .main {
     padding: 11em 1em 0 1em;
   }
+  .textCard{
+    font-size: 0.5em;
+  }
 }
 
 @media (min-width: 400px) {
   .main {
     padding: 11em 0 0 0;
+  }
+
+  .textCard{
+    font-size: 0.5em;
   }
 }
 
@@ -69,11 +129,17 @@ footer{
   .main {
     padding: 4em;
   }
+  .textCard{
+    font-size: 0.8em;
+  }
 }
 
 @media (min-width: 1024px) {
   .main {
     padding: 6em;
+  }
+  .textCard{
+    font-size: 1em;
   }
 }
 
@@ -81,10 +147,20 @@ footer{
   .main {
     padding: 8em;
   }
+  .textCard{
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 1536px) {
   .main {
     padding: 10em;
   }
+  .textCard{
+    font-size: 1em;
+  }
+  .carousel{
+    width: 80%;
+  }
+  
 }

@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Framework -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Lib -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Ícones -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
+    <!-- Estilos Locais -->
     <link rel="stylesheet" href="style/style.css">
-
-    <script src="/JS/custom.js" defer></script>
 
     <title>Portfólio | Nicolas Linares</title>
 </head>
 
-<body class="">
-    <header class="shadow-md shadow-yellow-900/50">
+<body>
+    <header class="shadow-md shadow-yellow-900/50 w-full">
         <nav class="flex items-center justify-center gap-4 p-4 text-white">
             <a class="links hover:text-orange-800" href="#home">Home</a>
-            <a class="links hover:text-orange-800" href="#sobre">Sobre</a>
             <a class="links hover:text-orange-800" href="#skills">Competências</a>
-            <a class="links hover:text-orange-800" href="#projetos">Projetos</a>
+            <a class="links hover:text-orange-800" href="#projects">Projetos</a>
         </nav>
     </header>
 
-    <section class="h-full flex flex-col md:flex-row items-center md:justify-between gap-6 h-screen main text-white">
+    <section id="home" class="h-full flex flex-col md:flex-row items-center md:justify-between gap-6 h-screen main text-white ">
         <div class="">
             <h1 class="text-5xl sm:text-7x1 md:text-5xl lg:text-5xl xl:text-7xl">Seja bem vindo!</h1>
             <h1 class="text-4xl sm:text-7x1 md:text-5xl lg:text-5xl xl:text-7xl">Sou <span class="text-orange-800 ">Nicolas Linares</span></h1>
@@ -43,7 +46,7 @@
         </div>
     </section>
 
-    <section class="skills flex flex-col items-center gap-20">
+    <section id="skills" class="skills flex flex-col items-center gap-16 rounded-3xl p-2">
         <div class="gap-6 flex items-center flex-col">
             <p class="fade-in text-orange-800 text-3xl sm:text-7x1 md:text-4xl lg:text-5xl xl:text-6xl">Habilidades Front-End</p>
 
@@ -94,65 +97,110 @@
         </div>
     </section>
 
+    <section id="projects" class="projects flex flex-col items-center justify-center text-gray-600">
+        <div class="carousel flex items-center flex-col gap-5 rounded-3xl p-2">
+        <i>Projetos <span class="text-orange-800">Front-End</span></i>
+            <div class="rounded-3xl p-2 card proj1">
+                <div class="swiper rounded-3xl p-2 fade-in">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/DarkSoulsClone - index.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Dark Souls Clone</span> - Landing Page</p>
+                                <p>Projeto desenvolvido para aprimorar habilidades em criação de landing pages, inspirado na página inicial do site oficial de Dark Souls.</p>
+                                <p>HTML - CSS - JavaScript - BootStrap</p>
+                                <p class="url">URL: <a href="veganico98.github.io/DarkSoulsClone/">veganico98.github.io/DarkSoulsClone/</a></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portifolio.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Portifólio</span></p>
+                                <p>Portifólio pessoal desenvolvido para apresentar meus projetos, demonstrar na prática minhas habilidades e facilitar o contato profissional</p>
+                                <p>HTML - CSS - JavaScript - TailWindCss</p>
+                                <p class="url">URL: <a href="veganico98.github.io/">veganico98.github.io</a></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/palavra-secreta.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Palavra Secreta</span></p>
+                                <p>Projeto desenvolvido durante o curso de React do Hora de codar. Um jogo interativo em que o jogador deve adivinhar uma palavra sorteada com base em um tema, revelando letra por letra e chances limitadas.</p>
+                                <p>HTML - CSS - ReactJs</p>
+                                <p class="url">URL: <a href="https://github.com/veganico98/Palavra-secreta">https://github.com/veganico98/Palavra-secreta</a></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/RodolfoRicci - index.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Técnico de Refrigeração</span> - Landing Page</p>
+                                <p>Projeto desenvolvido para divulgação e contato profissional de um técnico em refrigeração.</p>
+                                <p>HTML - CSS - BootStrap</p>
+                                <p class="url">URL: <a href="https://veganico98.github.io/Tecnico-refrigeracao/">https://veganico98.github.io/Tecnico-refrigeracao/</a></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/SpotifyClone - index.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Spotify Clone</span> - Landing Page</p>
+                                <p>Prática de front-end focada na recriação da estética da página inicial do Spotify</p>
+                                <p>HTML - CSS - BootStrap</p>
+                                <p class="url">URL: <a href="https://veganico98.github.io/Spotify-Clone-/">https://veganico98.github.io/Spotify-Clone-/</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <i>Projetos <span class="text-orange-800">Full-Stack</span></i>
+            <div class="rounded-3xl p-2 card proj2">
+                <div class="swiper rounded-3xl p-2 fade-in">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/twitterClone-index.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Twitter Clone</span></p>
+                                <p>Clone do Twitter desenvolvido durante o curso Web Completo com os instrutores Jorge Sant Ana e Jamilton Damasceno. O projeto foi realizado com foco no aprendizado de conceitos como segurança, uso de banco de dados, orientação a objetos em PHP e arquitetura MVC.</p>
+                                <p>HTML - CSS - PHP - BootStrap - MySQL</p>
+                                <p class="url">URL: <a href="https://github.com/veganico98/Twitter_Clone">https://github.com/veganico98/Twitter_Clone</a></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/TrialsOfDarkSouls3.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">Trials Of Dark Souls 3</span></p>
+                                <p>Projeto desenvolvido com o objetivo de auxiliar jogadores que buscam a platina do jogo. A aplicação permite que usuários criem contas e utilizem um checklist interativo de tarefas vinculadas ao seu perfil, facilitando o acompanhamento do progresso rumo à conquista.</p>
+                                <p>HTML - CSS - JavaScript - PHP - BootStrap - MySQL</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/DashBoard - index.png" class="w-full shadow-md shadow-yellow-900/50" />
+                            <div class="textCard flex flex-col gap-2">
+                                <p>Projeto: <span class="text-orange-800">DashPro</span></p>
+                                <p>Projeto "DashPro", desenvolvido durante o curso Web Completo dos instrutores Jorge Sant Ana e Jamilton Damasceno. Trata-se de um dashboard com atualização em tempo real, criado para praticar o uso de jQuery e PHP em conjunto com banco de dados MySQL.</p>
+                                <p>HTML - CSS - JavaScript - JQuery - PHP - JSON - MySQL</p>
+                                <p class="url">URL: <a href="https://github.com/veganico98/App_Dashboard">https://github.com/veganico98/App_Dashboard</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev text-orange-800"></div>
+                    <div class="swiper-button-next"></div>   
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- <section id="projetos" class="fade-in">
-    <h2 class="section-title">PROJETOS</h2>
-    <div class="projects-grid">
-        <div class="card">
-            <img src="img/portifolio.png" style="width: 100%; border-radius: 8px;">
-            <h3>Portfólio</h3>
-            <p>Portfólio moderno com HTML, CSS, JS e layout responsivo. Foco em UI/UX.</p>
-            <a href="https://github.com/veganico98/veganico98.github.io/tree/main">🔗 GitHub Repo</a>
-        </div>
-        <div class="card">
-            <img src="img/DarkSoulsClone - index.png" style="width: 100%; border-radius: 8px;">
-            <h3>Dark Souls 3 Official Website Clone</h3>
-            <p>Clone da página oficial de Dark Souls 3, criado como exercício prático de front-end com foco em HTML, CSS, JavaScript e Bootstrap.</p>
-            <a href="https://github.com/veganico98/DarkSoulsClone">🔗 GitHub Repo</a>
-        </div>
-        <div class="card">
-            <img src="img/TrialsOfDarkSouls3.png" style="width: 100%; border-radius: 8px;">
-            <h3>Trials Of Dark Souls 3</h3>
-            <p>Projeto full stack com arquitetura MVC, criado para auxiliar fãs da franquia Dark Souls a alcançarem 100% de progresso com um checklist interativo. Desenvolvido com HTML, CSS, Bootstrap, JavaScript, PHP e MySQL.</p>
-            <a href="https://github.com/veganico98/trialsOfDarkSouls3">🔗 GitHub Repo</a>
-        </div>
-    </div>
-  </section> -->
+    <footer class="flex items-center justify-center shadow-[0_-4px_10px_-2px_rgba(113,63,18,0.7)] text-white">
+        &copy; 2025 Nicolas Linares de Oliveira. Todos os direitos reservados.
+    </footer>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <footer class="flex items-center justify-center shadow-[0_-4px_10px_-2px_rgba(113,63,18,0.7)] text-white">
-            &copy; 2025 Nicolas Linares de Oliveira. Todos os direitos reservados.
-        </footer>
-    </body>
+
+    <script src="/JS/custom.js" defer></script>
+
+    <script>
+  
+</script>
 </html>
-
-<!-- <a href="https://wa.me/5535999799121" target="_blank" title="WhatsApp"><i class="fab text-3x1 text-white fa-whatsapp icon"></i></a>
-            
-            <a href="https://github.com/veganico98" target="_blank" title="GitHub"><i class="fab fa-github icon"></i></a>
-            
-            <a href="https://linkedin.com/in/nicolas-linares-de-oliveira/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin icon"></i></a> -->
-
-
-<!-- <div class="flex flex-col items-center gap-4 fade-in">
-            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Habilidades Front-End</p>
-            <a href="https://skillicons.dev">
-                <img class="icons" src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,js,jquery,react,vite" />
-            </a>
-        </div>
-        <div class="flex flex-col items-center gap-4 fade-in">
-            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Habilidades Back-End</p>
-            <a href="https://skillicons.dev">
-                <img class="icons" src="https://skillicons.dev/icons?i=php,laravel,python,java" />
-            </a>
-        </div>
-        <div class="flex flex-col items-center gap-4 fade-in">
-            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Banco de dados</p>
-            <a href="https://skillicons.dev">
-                <img class="icons" src="https://skillicons.dev/icons?i=mysql" />
-            </a>
-        </div>
-        <div class="flex flex-col items-center gap-4 fade-in">
-            <p class="text-gray-600 text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl">Ferramentas</p>
-            <a href="https://skillicons.dev">
-                <img class="icons" src="https://skillicons.dev/icons?i=vscode,git,github,docker,postman,powershell,ps,obsidian" />
-            </a>
-</div> -->
