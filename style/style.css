@@ -69,6 +69,15 @@ a:hover{
   width: 95%;
 }
 
+.swiper-button-next {
+  margin-bottom:10em;
+  z-index: 1;
+}
+
+.swiper-button-prev{
+
+}
+
 .proj1, .proj2{
   width: 80%;
 }
@@ -94,7 +103,7 @@ a:hover{
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #ff6600;
+  color: rgba(146, 146, 146, 0.3);
   border-radius: 20%;
   padding: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -102,7 +111,7 @@ a:hover{
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: #a84300;
+  color: rgba(19, 11, 11, 0.5);
 }
 
 footer{
