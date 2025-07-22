@@ -1,4 +1,3 @@
-// Caminho do JSON com os projetos
 fetch('data/projects.json')
   .then(res => res.json())
   .then(data => {
