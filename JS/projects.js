@@ -14,7 +14,7 @@ fetch('data/projects.json')
           <p>Projeto: <span class="text-orange-800">${project.nome}</span>${project.tipo ? ` - ${project.tipo}` : ''}</p>
           <p>${project.descricao}</p>
           <p>${project.tecnologias}</p>
-          ${project.url ? `<p class="url">URL: <a href="${project.url}" target="_blank">${project.url}</a></p>` : ''}
+          ${project.url ? `<p class="url">URL: <a style="color:#9a3412" href="${project.url}" target="_blank">${project.url}</a></p>` : ''}
           ${project.status ? `<p>${project.status}</p>` : ''}
         </div>
       `;

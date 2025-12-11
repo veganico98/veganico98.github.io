@@ -1,6 +1,15 @@
 [
   {
     "categoria": "Front-End",
+    "nome": "Hollow Knight Silksong Clone",
+    "tipo": "Landing Page",
+    "descricao": "Projeto desenvolvido para aprimorar habilidades em criação de landing pages, inspirado na página inicial do site oficial de Hollow Knight Silksong",
+    "tecnologias": "HTML - CSS - JavaScript",
+    "imagem": "img/HollowKnightSilksong - index.png",
+    "url": "https://hollowknightsilksong.com/"
+  },
+  {
+    "categoria": "Front-End",
     "nome": "Dark Souls Clone",
     "tipo": "Landing Page",
     "descricao": "Projeto desenvolvido para aprimorar habilidades em criação de landing pages, inspirado na página inicial do site oficial de Dark Souls.",
@@ -44,11 +53,18 @@
   },
   {
     "categoria": "Full-Stack",
+    "nome": "Conversor HTML to PDF",
+    "descricao": "Desenvolvido com o intúito de colocar em prática a criação e consumo de API RESTFUL de uma maneira dinâmica e visual utilizando o NEST.",
+    "tecnologias": "HTML - CSS - JavaScript - TypeScript - Nest",
+    "imagem": "img/ConvertHtml2Pdf - index.png",
+    "url": "https://github.com/veganico98/ConvertHTML_PDF"
+  },
+    {
+    "categoria": "Full-Stack",
     "nome": "Soma Rotina",
     "descricao": "Desenvolvido de forma independente com <a class='text-orange-800' href='https://github.com/olegarioojv'>olegarioojv</a> para iniciarmos nossos estudos em ReactJS, Vite e Laravel. A aplicação permite que o usuário registre períodos de tempo em um formulário, retornando a soma total acompanhada de uma mensagem motivacional ou de parabéns, com base na comparação com o registro anterior.",
     "tecnologias": "HTML - CSS - ReactJS - ViteJS - TailWindCss - PHP - Laravel",
-    "imagem": "img/SomaRotina.png",
-    "status": "Em andamento"
+    "imagem": "img/SomaRotina.png"
   },
   {
     "categoria": "Full-Stack",

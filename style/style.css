@@ -94,15 +94,34 @@ a:hover{
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: rgba(146, 146, 146, 0.3);
-  border-radius: 20%;
-  padding: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  --swiper-navigation-size: 22px;
+  color: #9a3412;
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255, 245, 251, 0.9), rgba(232, 240, 255, 0.9));
+  border: 1px solid rgba(184, 71, 19, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(247, 132, 0, 0.25);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.92;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: rgb(161, 167, 179);
+  color: #8d1c00;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 14px 32px rgba(92, 63, 0, 0.35);
+  opacity: 1;
 }
 
 footer{
@@ -149,6 +168,25 @@ footer{
   .email{
     font-size: 0.7em;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
+    position: absolute;
+    top: 30%;
+  }
+}
+
+@media (min-width: 300px){
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 34px;
+    height: 34px;
+    border-radius: 16px;
+    position: absolute;
+    top: 30%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -164,6 +202,13 @@ footer{
   .copy{
     font-size: 0.7em;
   }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+  }
+
 }
 
 @media (min-width: 1024px) {
