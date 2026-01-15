@@ -1,6 +1,15 @@
 [
   {
     "categoria": "Front-End",
+    "nome": "Uber TailWind",
+    "tipo": "Landing Page",
+    "descricao": "Projeto desenvolvido para aprimorar habilidades em criação de landing pages utilizando o framework Tailwind.",
+    "tecnologias": "HTML - Tailwind",
+    "imagem": "img/UberTailWind.png",
+    "url": "https://veganico98.github.io/uber_tailwind/"
+  },
+  {
+    "categoria": "Front-End",
     "nome": "Hollow Knight Silksong Clone",
     "tipo": "Landing Page",
     "descricao": "Projeto desenvolvido para aprimorar habilidades em criação de landing pages, inspirado na página inicial do site oficial de Hollow Knight Silksong",
@@ -25,23 +34,6 @@
     "imagem": "img/portifolio.png",
     "url": "https://veganico98.github.io/"
   }, 
-  {
-    "categoria": "Front-End",
-    "nome": "Técnico de Refrigeração",
-    "tipo": "Landing Page",
-    "descricao": "Projeto desenvolvido para divulgação e contato profissional de um técnico em refrigeração.",
-    "tecnologias": "HTML - CSS - BootStrap",
-    "imagem": "img/RodolfoRicci - index.png",
-    "url": "https://veganico98.github.io/Tecnico-refrigeracao/"
-  },
-  {
-    "categoria": "Front-End",
-    "nome": "Palavra Secreta",
-    "descricao": "Projeto desenvolvido durante o curso de React do Hora de Codar. Um jogo interativo em que o jogador deve adivinhar uma palavra sorteada com base em um tema, revelando letra por letra e chances limitadas.",
-    "tecnologias": "HTML - CSS - ReactJs",
-    "imagem": "img/palavra-secreta.png",
-    "url": "https://github.com/veganico98/Palavra-secreta"
-  },
   {
     "categoria": "Front-End",
     "nome": "Spotify Clone",
