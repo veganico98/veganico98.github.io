@@ -1,10 +1,22 @@
 [
     {
-        "title": "",
-        "img": "",
-        "desc": "",
-        "icon": [],
-        "rep": "",
-        "deploy": ""
+        "title": "Dark Souls Clone",
+        "img": "darkSoulsClone",
+        "desc": "Réplica da página inicial oficial de Dark Souls, desenvolvida como projeto prático para aprimorar habilidades em desenvolvimento web. O projeto utiliza HTML, CSS, Tailwind CSS e JavaScript, com foco na reprodução do layout, estilização e interações da página original.",
+        "tools": [
+            "HTML", "CSS", "JavaScript", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/DarkSoulsClone",
+        "deploy": "https://veganico98.github.io/DarkSoulsClone/"
+    },
+    {
+        "title": "Holow Knight Silksong Clone",
+        "img": "hollowKnightSilksong",
+        "desc": "Réplica da página inicial de Hollow Knight: Silksong, desenvolvida com HTML, CSS, Tailwind CSS e JavaScript, explorando a reprodução do layout, identidade visual e interações da página original.",
+        "tools": [
+            "HTML", "CSS", "JavaScript", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/clone-hollow-knight-silksong",
+        "deploy": "https://veganico98.github.io/clone-hollow-knight-silksong/"
     }
 ]
