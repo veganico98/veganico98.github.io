@@ -29,6 +29,6 @@ function skillGen(){
 skillGen();
 };
 
-function splitString(text){
+export function splitString(text){
     return text.split(" ")
 };
