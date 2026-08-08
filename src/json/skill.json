@@ -1,0 +1,58 @@
+[
+    {
+        "title": "HTML",
+        "icon": "devicon-html5-plain",
+        "desc": ""
+    },
+    {
+        "title": "CSS",
+        "icon": "devicon-css3-plain",
+        "desc": ""
+    },
+    {
+        "title": "JavaScript",
+        "icon": "devicon-javascript-plain",
+        "desc": ""
+    },
+    {
+        "title": "Tailwind",
+        "icon": "devicon-tailwindcss-original",
+        "desc": ""
+    },
+    {
+        "title": "TypeScript",
+        "icon": "devicon-typescript-plain",
+        "desc": ""
+    },
+    {
+        "title": "NodeJS",
+        "icon": "devicon-nodejs-plain",
+        "desc": ""
+    },
+    {
+        "title": "MySQL",
+        "icon": "devicon-mysql-original",
+        "desc": ""
+    },
+    {
+        "title": "Git",
+        "icon": "devicon-git-plain",
+        "desc": ""
+    },
+    {
+        "title": "Github",
+        "icon": "devicon-github-original",
+        "desc": ""
+    },
+    {
+        "title": "VSCode",
+        "icon": "devicon-vscode-plain",
+        "desc": ""
+    },
+    {
+        "title": "Postman",
+        "icon": "devicon-postman-plain",
+        "desc": ""
+    }
+    
+]
