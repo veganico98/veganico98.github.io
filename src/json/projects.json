@@ -1,5 +1,25 @@
 [
     {
+        "title": "Forest",
+        "img": "forest",
+        "desc": "Forest é uma página desenvolvida com HTML, Tailwind CSS e JavaScript para um hotel ao ar livre, explorando a criação de uma interface moderna, responsiva e interativa. O projeto teve como foco trabalhar a composição visual, organização de conteúdo e implementação de interações para proporcionar uma experiência voltada ao turismo e contato com a natureza.",
+        "tools": [
+            "HTML", "JavaScript", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/Forest",
+        "deploy": "https://veganico98.github.io/Forest/"
+    },
+    {
+        "title": "Uber Tailwind",
+        "img": "uberTailWind",
+        "desc": "Página inspirada na interface da Uber, desenvolvida com HTML, CSS e Tailwind CSS. O projeto teve como foco reproduzir a identidade visual e a estrutura da plataforma, explorando a criação de layouts modernos, responsivos e componentes estilizados com Tailwind CSS.",
+        "tools": [
+            "HTML", "CSS", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/uber_tailwind",
+        "deploy": "https://veganico98.github.io/uber_tailwind/"
+    },
+    {
         "title": "Dark Souls Clone",
         "img": "darkSoulsClone",
         "desc": "Réplica da página inicial oficial de Dark Souls, desenvolvida como projeto prático para aprimorar habilidades em desenvolvimento web. O projeto utiliza HTML, CSS, Tailwind CSS e JavaScript, com foco na reprodução do layout, estilização e interações da página original.",
@@ -18,5 +38,55 @@
         ],
         "rep": "https://github.com/veganico98/clone-hollow-knight-silksong",
         "deploy": "https://veganico98.github.io/clone-hollow-knight-silksong/"
+    },
+    {
+        "title": "Ricci Ar",
+        "img": "ricciar",
+        "desc": "Landing page desenvolvida com HTML e Tailwind CSS para um comércio especializado em suporte e instalação de ar-condicionado. O projeto teve como foco criar uma interface moderna, responsiva e objetiva, apresentando os serviços oferecidos de forma clara e destacando a identidade visual do negócio.",
+        "tools": [
+            "HTML", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/clone-hollow-knight-silksong",
+        "deploy": "https://veganico98.github.io/clone-hollow-knight-silksong/"
+    },
+    {
+        "title": "Meow Facts",
+        "img": "meowFacts",
+        "desc": "Meow Facts é uma aplicação desenvolvida para aprimorar conhecimentos em JavaScript assíncrono, utilizando múltiplas APIs para criar uma experiência dinâmica e interativa. O projeto integra a Cat Fact API para obter curiosidades sobre gatos, Cataas para gerar imagens, MyMemory para tradução dos conteúdos e arquivos JSON para gerar diferentes logos a cada acesso à página. A aplicação utiliza requisições assíncronas e manipulação dinâmica do DOM para integrar e apresentar os dados em tempo real.",
+        "tools": [
+            "HTML", "CSS", "JavaScript", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/meowFacts/tree/main",
+        "deploy": "https://meow-facts-eight.vercel.app/"
+    },
+    {
+        "title": "Sorteador",
+        "img": "sorteador",
+        "desc": "Sorteador desenvolvido com HTML, Tailwind CSS e JavaScript, criado para aprimorar conhecimentos em manipulação do DOM e interação com elementos da página. O projeto explora a criação e atualização dinâmica de elementos, gerenciamento de eventos e construção de uma interface responsiva.",
+        "tools": [
+            "HTML", "JavaScript", "Tailwind"
+        ],
+        "rep": "https://github.com/veganico98/sorteador",
+        "deploy": "https://veganico98.github.io/sorteador/"
+    },
+    {
+        "title": "Spotify Home Clone",
+        "img": "spotifyClone",
+        "desc": "Réplica da página inicial do Spotify, desenvolvida com HTML e CSS, explorando a reprodução da identidade visual, estrutura e layout responsivo da interface original.",
+        "tools": [
+            "HTML", "CSS"
+        ],
+        "rep": "https://github.com/veganico98/Spotify-Clone-",
+        "deploy": "https://veganico98.github.io/Spotify-Clone-/"
+    },
+    {
+        "title": "Twiter clone",
+        "img": "twitterClone",
+        "desc": "Clone da interface do Twitter, desenvolvido com HTML, CSS, PHP e MySQL. O projeto explorou a construção de uma aplicação web completa, integrando front-end, back-end e banco de dados para trabalhar com a persistência e gerenciamento de informações.",
+        "tools": [
+            "HTML", "CSS", "PHP"
+        ],
+        "rep": "https://github.com/veganico98/Twitter_Clone/tree/main",
+        "deploy": "#"
     }
 ]

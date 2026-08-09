@@ -25,6 +25,11 @@
         "desc": ""
     },
     {
+        "title": "PHP",
+        "icon": "devicon-php-plain",
+        "desc": ""
+    },
+    {
         "title": "NodeJS",
         "icon": "devicon-nodejs-plain",
         "desc": ""
@@ -54,5 +59,4 @@
         "icon": "devicon-postman-plain",
         "desc": ""
     }
-    
 ]
