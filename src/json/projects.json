@@ -80,7 +80,7 @@
         "deploy": "https://veganico98.github.io/Spotify-Clone-/"
     },
     {
-        "title": "Twiter clone",
+        "title": "Twitter clone",
         "img": "twitterClone",
         "desc": "Clone da interface do Twitter, desenvolvido com HTML, CSS, PHP e MySQL. O projeto explorou a construção de uma aplicação web completa, integrando front-end, back-end e banco de dados para trabalhar com a persistência e gerenciamento de informações.",
         "tools": [
