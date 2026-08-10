@@ -12,6 +12,7 @@
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-neutral-300: oklch(87% 0 none);
+    --color-neutral-400: oklch(70.8% 0 none);
     --color-neutral-500: oklch(55.6% 0 none);
     --color-neutral-600: oklch(43.9% 0 none);
     --color-neutral-800: oklch(26.9% 0 none);
@@ -200,17 +201,8 @@
   .inset-0 {
     inset: 0px;
   }
-  .top-0 {
-    top: 0px;
-  }
-  .left-0 {
-    left: 0px;
-  }
   .-z-50 {
     z-index: calc(50 * -1);
-  }
-  .z-50 {
-    z-index: 50;
   }
   .z-60 {
     z-index: 60;
@@ -389,8 +381,26 @@
   .border-yellow-400 {
     border-color: var(--color-yellow-400);
   }
-  .border-b-neutral-800 {
-    border-bottom-color: var(--color-neutral-800);
+  .border-b-neutral-400 {
+    border-bottom-color: var(--color-neutral-400);
+  }
+  .border-b-neutral-400\/40 {
+    border-bottom-color: color-mix(in srgb, oklch(70.8% 0 none) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-neutral-400) 40%, transparent);
+    }
+  }
+  .border-b-neutral-500 {
+    border-bottom-color: var(--color-neutral-500);
+  }
+  .border-b-neutral-500\/40 {
+    border-bottom-color: color-mix(in srgb, oklch(55.6% 0 none) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-neutral-500) 40%, transparent);
+    }
+  }
+  .border-b-neutral-900 {
+    border-bottom-color: var(--color-neutral-900);
   }
   .bg-neutral-800 {
     background-color: var(--color-neutral-800);
@@ -427,9 +437,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -521,10 +528,6 @@
   }
   .opacity-0 {
     opacity: 0%;
-  }
-  .shadow-md {
-    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -688,9 +691,6 @@
     .md\:flex {
       display: flex;
     }
-    .md\:hidden {
-      display: none;
-    }
     .md\:size-70 {
       width: calc(var(--spacing) * 70);
       height: calc(var(--spacing) * 70);
@@ -715,10 +715,6 @@
     }
     .md\:pt-60 {
       padding-top: calc(var(--spacing) * 60);
-    }
-    .md\:text-2xl {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
     .md\:text-lg {
       font-size: var(--text-lg);
@@ -871,71 +867,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-inset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-ring-inset {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-offset-width {
-  syntax: "<length>";
-  inherits: false;
-  initial-value: 0px;
-}
-@property --tw-ring-offset-color {
-  syntax: "*";
-  inherits: false;
-  initial-value: #fff;
-}
-@property --tw-ring-offset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -1058,20 +989,6 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-color: initial;
-      --tw-shadow-alpha: 100%;
-      --tw-inset-shadow: 0 0 #0000;
-      --tw-inset-shadow-color: initial;
-      --tw-inset-shadow-alpha: 100%;
-      --tw-ring-color: initial;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-inset-ring-color: initial;
-      --tw-inset-ring-shadow: 0 0 #0000;
-      --tw-ring-inset: initial;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
