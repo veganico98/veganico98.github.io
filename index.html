@@ -7,26 +7,56 @@
     <link rel="stylesheet" href="./src/styles/output.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="./src/styles/animations.css">
-          
+
 </head>
-<body class="bg-neutral-950 ">
-    <header class="fixed top-0 left-0 z-50 w-full bg-neutral-900 text-white flex items-center justify-between gap-5 px-10 py-5 border-b-2 border-b-neutral-800 shadow-md">
-        <span class="text-3xl md:text-2xl">Nicolas L. Oliveira</span>
-        <ul class="hidden md:flex gap-8 text-xl *:*:relative *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500 *:*:after:absolute *:*:after:left-0 *:*:after:-bottom-1 *:*:after:h-0.5 *:*:after:w-0 *:*:after:bg-yellow-400 *:*:after:transition-all *:*:after:duration-300 *:*:hover:after:w-full">
-            <li><a href="#hero">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="./src/doc/Curriculum-Nicolas-Linares.pdf">Curriculum</a><li>
-        </ul>
-        <div class="hidden md:flex gap-4 text-2xl *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500">
-            <a href="https://www.linkedin.com/in/nicolas-linares-de-oliveira/"><i class="devicon-linkedin-plain"></i></a>
-            <a href="https://github.com/veganico98"><i class="devicon-github-original"></i></a>
+<body class="bg-neutral-950">
+    <!-- <header class="fixed top-0 left-0 z-50 w-full bg-neutral-900 text-white border-b-2 border-b-neutral-800 shadow-md flex items-center justify-between gap-5 px-5">
+        <div id="mobileMenu" class="flex items-center justify-between gap-5 px-10 py-5">
+            <span class="text-3xl md:text-2xl">Nicolas L. Oliveira</span>
+            <ul class="hidden md:flex gap-8 text-xl *:*:relative *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500 *:*:after:absolute *:*:after:left-0 *:*:after:-bottom-1 *:*:after:h-0.5 *:*:after:w-0 *:*:after:bg-yellow-400 *:*:after:transition-all *:*:after:duration-300 *:*:hover:after:w-full">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="./src/doc/Curriculum-Nicolas-Linares.pdf">Curriculum</a><li>
+            </ul>
+            <div class="hidden md:flex gap-4 text-2xl *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500">
+                <a href="https://www.linkedin.com/in/nicolas-linares-de-oliveira/"><i class="devicon-linkedin-plain"></i></a>
+                <a href="https://github.com/veganico98"><i class="devicon-github-original"></i></a>
+            </div>
         </div>
         <div class="md:hidden">
-            <img src="./src/img/icon/hamburger-menu.svg" class="size-12 cursor-pointer" alt="hamburger-menu">
+            <img id="mobileBtn" src="./src/img/icon/hamburger-menu.svg" class="size-12 cursor-pointer" alt="hamburger-menu">
+        </div>
+    </header> -->
+    <header class="flex justify-between lg:justify-center items-center gap-8 py-8 bg-neutral-900 px-8">
+        <span class="lg:hidden text-3xl logo-liquid cursor-pointer">Nicolas L. Oliveira</span>
+        
+        <nav id="mobileMenu" class="hidden lg:flex gap-8 items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
+            
+            <div class="fixed lg:hidden inset-0 bg-verde-950/40 backdrop-blur-md"></div>
+            
+            <span class="hidden lg:flex text-3xl logo-liquid cursor-pointer">Nicolas L. Oliveira</span>
+
+
+             <ul class="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:p-8 max-lg:w-full max-lg:absolute lg:text-xl lg:flex lg:flex-wrap lg:gap-8 *:*:relative *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500 *:*:after:absolute *:*:after:left-0 *:*:after:-bottom-1 *:*:after:h-0.5 *:*:after:w-0 *:*:after:bg-yellow-400 *:*:after:transition-all *:*:after:duration-300 *:*:hover:after:w-full">
+                <li class="animate-slide-in delay-75 opacity-0"><a class="p-4 lg:px-0 lg:py-2 block" href="#hero">Início</a></li>
+                <li class="animate-slide-in delay-100 opacity-0"><a class="p-4 lg:px-0 lg:py-2 block" href="#about">Sobre</a></li>
+                <li class="animate-slide-in delay-150 opacity-0"><a class="p-4 lg:px-0 lg:py-2 block" href="#skills">Habilidades</a></li>
+                <li class="animate-slide-in delay-200 opacity-0"><a class="p-4 lg:px-0 lg:py-2 block" href="#projects">Projetos</a></li>
+                <li class="animate-slide-in delay-200 opacity-0"><a class="p-4 lg:px-0 lg:py-2 block" href="./src/doc/Curriculum-Nicolas-Linares.pdf">Curriculum</a></li>
+            </ul>
+
+            <div class="hidden md:flex gap-4 text-2xl *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500">
+                <a href="https://www.linkedin.com/in/nicolas-linares-de-oliveira/"><i class="devicon-linkedin-plain"></i></a>
+                <a href="https://github.com/veganico98"><i class="devicon-github-original"></i></a>
+            </div>
+        </nav>
+        <div class="lg:hidden">
+            <img id="mobileButton" src="./src/img/icon/hamburger-menu.svg" class="size-12 cursor-pointer" alt="hamburger-menu">
         </div>
     </header>
+
 
     <section id="hero" class="h-screen flex items-start lg:items-center justify-center pt-40 md:pt-60 lg:pt-0 lg:px-20">
         <div class="flex flex-col lg:flex-row-reverse items-center justify-center gap-20 lg:gap-5 px-8 lg:px-20 ">
@@ -72,6 +102,17 @@
             <div id="projectsArea" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 self-center gap-4 md:gap-8 "></div>
         </div>
     </section>
+
+    <footer class="px-10 pt-10 pb-5">
+        <hr class=" text-neutral-800">
+        <div class="flex items-center justify-center pt-2">
+            <p class="text-neutral-600">Nicolas Linares de Oliveira. Todos os direitos reservados</p>
+        </div>
+        <div class="flex items-center justify-center gap-6 pt-4 text-2xl *:*:text-white *:*:hover:text-yellow-400 *:*:duration-500">
+            <a href="https://www.linkedin.com/in/nicolas-linares-de-oliveira/"><i class="devicon-linkedin-plain"></i></a>
+            <a href="https://github.com/veganico98"><i class="devicon-github-original"></i></a>
+        </div>
+    </footer>
      
 </body>
     <script type="module" src="./src/js/script.js"></script>

@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@utility animate-slide-in {
+  animation: slideIn 0.4s ease-in-out forwards;
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+@utility delay-0   { animation-delay: 0ms; }
+@utility delay-75  { animation-delay: 75ms; }
+@utility delay-100 { animation-delay: 100ms; }
+@utility delay-150 { animation-delay: 150ms; }
+@utility delay-200 { animation-delay: 200ms; }
+@utility delay-300 { animation-delay: 300ms; }
+@utility delay-500 { animation-delay: 500ms; }
+@utility delay-700 { animation-delay: 700ms; }
+@utility delay-1000 { animation-delay: 1000ms; }

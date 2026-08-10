@@ -1,3 +1,23 @@
-*{
-    margin: 0;
+.logo-liquid {
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #facc15 0%,
+        #facc15 50%,
+        white 50%,
+        white 100%
+    );
+
+    background-size: 200% 100%;
+    background-position: 100% 0;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: background-position 1s cubic-bezier(.65, 0, .35, 1);
+}
+
+.logo-liquid:hover {
+    background-position: 0 0;
 }
