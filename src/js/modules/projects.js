@@ -49,44 +49,46 @@ export default function initProjects(){
         return dataDiv;
     }
 
-    function renderTools(tool){
-        const toolsDiv = document.createElement("div");
-        toolsDiv.classList.add(...splitString("grid grid-cols-2 md:grid-cols-3 gap-2"));
-
-        tool.forEach(item => {
-            const tools = document.createElement("p");
-            tools.innerText = item;
-            tools.classList.add(...splitString("bg-neutral-950 text-neutral-500 rounded-md flex items-center justify-center py-1"));
-            toolsDiv.appendChild(tools)
-        })
-
-        return toolsDiv;
-    }
-
-    function renderLinks(github, deploy){    
-        const linkDiv = document.createElement("div");
-        linkDiv.classList.add(...splitString("grid grid-cols-2 gap-2"));
-        const linkStyles = "bg-neutral-950 text-neutral-500 rounded-md flex items-center justify-center gap-2 py-1 hover:bg-neutral-900 hover:[filter:drop-shadow(0_0_2px_rgba(250,204,21,0.35))] duration-500";
-
-        const githubLink = document.createElement("a");
-        const deployLink = document.createElement("a");
-        const githubIcon = document.createElement("i");
-        githubIcon.classList.add("devicon-github-original");
-
-        githubLink.classList.add(...splitString(linkStyles));
-        githubLink.innerText = "Github";
-        githubLink.prepend(githubIcon);
-        githubLink.href = github;
-
-        deployLink.classList.add(...splitString(linkStyles));
-        deployLink.innerText = "Deploy"
-        deployLink.href = deploy;
-
-        linkDiv.appendChild(githubLink);
-        linkDiv.appendChild(deployLink);
-        return linkDiv
-    }
+    
 
 
     getProjects()
+}
+
+export function renderTools(tool){
+    const toolsDiv = document.createElement("div");
+    toolsDiv.classList.add(...splitString("grid grid-cols-2 md:grid-cols-3 gap-2 p-5"));
+
+    tool.forEach(item => {
+        const tools = document.createElement("p");
+        tools.innerText = item;
+        tools.classList.add(...splitString("bg-neutral-950 text-neutral-500 rounded-md flex items-center justify-center py-1"));
+        toolsDiv.appendChild(tools)
+    })
+
+    return toolsDiv;
+}
+
+export function renderLinks(github, deploy){    
+    const linkDiv = document.createElement("div");
+    linkDiv.classList.add(...splitString("grid grid-cols-2 gap-2 p-5"));
+    const linkStyles = "bg-neutral-950 text-neutral-500 rounded-md flex items-center justify-center gap-2 py-1 hover:bg-neutral-900 hover:[filter:drop-shadow(0_0_2px_rgba(250,204,21,0.35))] duration-500";
+
+    const githubLink = document.createElement("a");
+    const deployLink = document.createElement("a");
+    const githubIcon = document.createElement("i");
+    githubIcon.classList.add("devicon-github-original");
+
+    githubLink.classList.add(...splitString(linkStyles));
+    githubLink.innerText = "Github";
+    githubLink.prepend(githubIcon);
+    githubLink.href = github;
+
+    deployLink.classList.add(...splitString(linkStyles));
+    deployLink.innerText = "Deploy"
+    deployLink.href = deploy;
+
+    linkDiv.appendChild(githubLink);
+    linkDiv.appendChild(deployLink);
+    return linkDiv
 }
