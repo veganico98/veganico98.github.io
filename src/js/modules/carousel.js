@@ -26,7 +26,7 @@ function carousel(){
 
 function slideCard(slide, title, img, desc, tools, rep, deploy){
   const li = document.createElement('li');
-  const card = document.createElement('div'); // "card" não é uma tag válida, troquei pra div
+  const card = document.createElement('div');
   const cardImg = document.createElement('img');
   cardImg.src = `./src/img/projects/${img}.png`;
 

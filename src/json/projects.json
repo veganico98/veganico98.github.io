@@ -10,6 +10,16 @@
         "deploy": "https://veganico98.github.io/Forest/"
     },
     {
+        "title": "Portifólio",
+        "img": "portifolio",
+        "desc": "Portfólio pessoal desenvolvido com HTML, CSS, Tailwind CSS, JavaScript e JSON, criado para apresentar minhas habilidades, projetos e experiências de forma moderna e responsiva. O projeto também utiliza JavaScript para manipulação dinâmica do conteúdo e arquivos JSON para organização e carregamento dos dados, além de explorar animações e interações para proporcionar uma experiência mais fluida ao usuário.",
+        "tools": [
+            "HTML", "CSS", "JavaScript", "Tailwind", "JSON"
+        ],
+        "rep": "https://github.com/veganico98/veganico98.github.io",
+        "deploy": "https://veganico98.github.io/"
+    },
+    {
         "title": "Uber Tailwind",
         "img": "uberTailWind",
         "desc": "Página inspirada na interface da Uber, desenvolvida com HTML, CSS e Tailwind CSS. O projeto teve como foco reproduzir a identidade visual e a estrutura da plataforma, explorando a criação de layouts modernos, responsivos e componentes estilizados com Tailwind CSS.",

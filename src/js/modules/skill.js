@@ -11,8 +11,8 @@ function skillGen(){
             const skillIcon = document.createElement("i");
             const skillName = document.createElement("p");
 
-            skillGrid.classList.add(...splitString("md:w-50 md:h-50 p-8 bg-neutral-800 flex flex-col gap-3 items-center justify-center rounded-2xl border-1 border-neutral-300/30 hover:[filter:drop-shadow(0_0_15px_rgba(250,204,21,0.35))] duration-700 cursor-pointer"));
-            skillIcon.classList.add(...splitString("text-5xl text-amber-400"));
+            skillGrid.classList.add(...splitString("md:w-50 md:h-50 p-8 bg-neutral-800 flex flex-col gap-3 items-center justify-center rounded-2xl border-1 border-neutral-300/30 effect hover:[filter:drop-shadow(0_0_10px_rgba(250,204,21,0.35))] duration-700 cursor-pointer"));
+            skillIcon.classList.add(...splitString("text-5xl text-yellow-400"));
             skillIcon.classList.add(`${item.icon}`);
             skillName.classList.add(...splitString("text-3xl text-white font-bold"));
             skillName.innerText = item.title

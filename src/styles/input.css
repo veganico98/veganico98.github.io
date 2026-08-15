@@ -4,6 +4,8 @@
 
 @theme {
     --font-space: "Space Grotesk", sans-serif;
+    --color-brand: #4B465D;
+    --color-brand-dark: #393546;
 }
 
 @utility container {

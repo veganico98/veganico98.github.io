@@ -11,7 +11,7 @@ export default function initProjects(){
             body.forEach(item => {
                 const card = document.createElement("div");
 
-                card.classList.add(...splitString("bg-neutral-800 flex flex-col rounded-2xl border border-neutral-300/30 hover:[filter:drop-shadow(0_0_15px_rgba(250,204,21,0.35))] duration-700"));
+                card.classList.add(...splitString("card bg-neutral-800 flex flex-col rounded-2xl border border-neutral-300/30 effect hover:[filter:drop-shadow(0_0_10px_rgba(250,204,21,0.35))] duration-700"));
                 card.appendChild(renderImageCard(item.img));
                 card.appendChild(renderDataCard(item.title, item.desc, item.tools, item.rep, item.deploy));
 
@@ -37,20 +37,16 @@ export default function initProjects(){
         cardDesc.innerText = desc;
 
         dataDiv.classList.add(...splitString("w-full py-6 px-5 flex flex-col gap-3"));
-        cardTitle.classList.add(...splitString("text-2xl font-bold text-yellow-400"));
-        cardDesc.classList.add(...splitString("text-sm text-neutral-300 break-words"));
+        cardTitle.classList.add(...splitString("highlight text-2xl font-bold text-yellow-400"));
+        cardDesc.classList.add(...splitString("desc text-sm text-neutral-300 break-words"));
 
         dataDiv.appendChild(cardTitle);
         dataDiv.appendChild(cardDesc);
         dataDiv.appendChild(renderTools(tool))
         dataDiv.appendChild(renderLinks(github, deploy))
         
-
         return dataDiv;
     }
-
-    
-
 
     getProjects()
 }
@@ -72,7 +68,7 @@ export function renderTools(tool){
 export function renderLinks(github, deploy){    
     const linkDiv = document.createElement("div");
     linkDiv.classList.add(...splitString("grid grid-cols-2 gap-2 p-5"));
-    const linkStyles = "bg-neutral-950 text-neutral-500 rounded-md flex items-center justify-center gap-2 py-1 hover:bg-neutral-900 hover:[filter:drop-shadow(0_0_2px_rgba(250,204,21,0.35))] duration-500";
+    const linkStyles = "links bg-neutral-950 text-neutral-500 rounded-md flex items-center justify-center gap-2 py-1 hover:bg-neutral-900 effect hover:[filter:drop-shadow(0_0_10px_rgba(250,204,21,0.35))] duration-500";
 
     const githubLink = document.createElement("a");
     const deployLink = document.createElement("a");
