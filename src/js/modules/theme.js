@@ -112,10 +112,10 @@ function changeTheme(){
     menu.classList.toggle("*:*:after:bg-yellow-400");
     menu.classList.toggle("max-lg:divide-white/10");
 
-    menu.classList.toggle("*:*:text-slate-400/80");
+    menu.classList.toggle("*:*:text-slate-500/90");
     menu.classList.toggle("*:*:hover:text-indigo-600");
     menu.classList.toggle("*:*:after:bg-indigo-600");
-    menu.classList.toggle("max-lg:divide-slate-200/40");
+    menu.classList.toggle("max-lg:divide-slate-400/40");
 
     themeBtn.forEach(item => {
         item.classList.toggle("hover:text-yellow-400");

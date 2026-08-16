@@ -9,34 +9,22 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
-    --color-indigo-300: oklch(78.5% 0.115 274.713);
     --color-indigo-400: oklch(67.3% 0.182 276.935);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-indigo-600: oklch(51.1% 0.262 276.966);
-    --color-indigo-800: oklch(39.8% 0.195 277.366);
-    --color-indigo-900: oklch(35.9% 0.144 278.697);
-    --color-purple-900: oklch(38.1% 0.176 304.987);
     --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-slate-400: oklch(70.4% 0.04 256.788);
+    --color-slate-500: oklch(55.4% 0.046 257.417);
     --color-slate-700: oklch(37.2% 0.044 257.287);
-    --color-slate-900: oklch(20.8% 0.042 265.755);
-    --color-neutral-100: oklch(97% 0 none);
-    --color-neutral-200: oklch(92.2% 0 none);
     --color-neutral-300: oklch(87% 0 none);
-    --color-neutral-400: oklch(70.8% 0 none);
     --color-neutral-500: oklch(55.6% 0 none);
     --color-neutral-600: oklch(43.9% 0 none);
     --color-neutral-800: oklch(26.9% 0 none);
     --color-neutral-900: oklch(20.5% 0 none);
     --color-neutral-950: oklch(14.5% 0 none);
-    --color-stone-200: oklch(92.3% 0.003 48.717);
-    --color-olive-50: oklch(98.8% 0.003 106.5);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -54,8 +42,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
     --radius-2xl: 1rem;
@@ -67,8 +53,6 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-space: "Space Grotesk", sans-serif;
-    --color-brand: #4B465D;
-    --color-brand-dark: #393546;
   }
 }
 @layer base {
@@ -361,9 +345,6 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
   .self-center {
     align-self: center;
@@ -660,6 +641,18 @@
       color: color-mix(in oklab, var(--color-slate-400) 80%, transparent);
     }
   }
+  :is(:is(.\*\:\*\:text-slate-400\/90 > *) > *) {
+    color: color-mix(in srgb, oklch(70.4% 0.04 256.788) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-slate-400) 90%, transparent);
+    }
+  }
+  :is(:is(.\*\:\*\:text-slate-500\/90 > *) > *) {
+    color: color-mix(in srgb, oklch(55.4% 0.046 257.417) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-slate-500) 90%, transparent);
+    }
+  }
   :is(:is(.\*\:\*\:text-white > *) > *) {
     color: var(--color-white);
   }
@@ -772,6 +765,18 @@
       border-color: color-mix(in srgb, oklch(92.9% 0.013 255.508) 40%, transparent);
       @supports (color: color-mix(in lab, red, red)) {
         border-color: color-mix(in oklab, var(--color-slate-200) 40%, transparent);
+      }
+    }
+    :where(.max-lg\:divide-slate-300\/40 > :not(:last-child)) {
+      border-color: color-mix(in srgb, oklch(86.9% 0.022 252.894) 40%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-color: color-mix(in oklab, var(--color-slate-300) 40%, transparent);
+      }
+    }
+    :where(.max-lg\:divide-slate-400\/40 > :not(:last-child)) {
+      border-color: color-mix(in srgb, oklch(70.4% 0.04 256.788) 40%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-color: color-mix(in oklab, var(--color-slate-400) 40%, transparent);
       }
     }
     :where(.max-lg\:divide-white\/10 > :not(:last-child)) {
